@@ -1,0 +1,53 @@
+.about {
+  @include centerised(80%);
+  margin-top: 100px;
+  &__card {
+    @include flex-position();
+    img {
+      width: 100%;
+      position: relative;
+      border-radius: inherit;
+    }
+  }
+  button {
+    @include green-btn();
+  }
+  p {
+    color: $text-color;
+    font-size: 18px;
+  }
+}
+
+.learn-more,
+.read-more {
+  &__info {
+    width: 40%;
+  }
+  &__img {
+    width: 40%;
+    border: 1px solid $border-color;
+    border-radius: 15% 0 15% 0;
+  }
+}
+.learn-more {
+  margin-bottom: 70px;
+  img {
+    top: 15px;
+    left: 15px;
+  }
+}
+.read-more {
+  img {
+    bottom: 15px;
+    right: 15px;
+  }
+  &__number {
+    font-size: 200px;
+    font-weight: 900;
+    background-image: url(../assets/images/about-number.png);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-position-y: 65%;
+  }
+}

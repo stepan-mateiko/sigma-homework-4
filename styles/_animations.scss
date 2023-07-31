@@ -1,0 +1,125 @@
+@-webkit-keyframes subscribe {
+  from {
+    color: #212832;
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    font-weight: 400;
+    opacity: 0;
+  }
+  to {
+    color: #f0bb1f;
+    -webkit-transform: scale(1.8) rotate(360deg);
+    transform: scale(1.8) rotate(360deg);
+    font-weight: bolder;
+    opacity: 1;
+  }
+}
+
+@keyframes subscribe {
+  from {
+    color: #212832;
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    font-weight: 400;
+    opacity: 0;
+  }
+  to {
+    color: #f0bb1f;
+    -webkit-transform: scale(1.8) rotate(360deg);
+    transform: scale(1.8) rotate(360deg);
+    font-weight: bolder;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blog {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blog {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blog-remove {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes blog-remove {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes preloaderAnimation {
+  0%,
+  100% {
+    background-color: #333;
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    background-color: #ff0000;
+    -webkit-transform: translate(-20px, 20px) scale(1.5);
+    transform: translate(-20px, 20px) scale(1.5);
+  }
+  40% {
+    background-color: #00ff00;
+    -webkit-transform: translate(40px, -40px) scale(0.5);
+    transform: translate(40px, -40px) scale(0.5);
+  }
+  60% {
+    background-color: #0000ff;
+    -webkit-transform: translate(-80px, -80px) scale(1.7);
+    transform: translate(-80px, -80px) scale(1.7);
+  }
+  80% {
+    background-color: #ffff00;
+    -webkit-transform: translate(160px, -160px) scale(0.7);
+    transform: translate(160px, -160px) scale(0.7);
+  }
+}
+
+@keyframes preloaderAnimation {
+  0%,
+  100% {
+    background-color: #333;
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  20% {
+    background-color: #ff0000;
+    -webkit-transform: translate(-20px, 20px) scale(1.5);
+    transform: translate(-20px, 20px) scale(1.5);
+  }
+  40% {
+    background-color: #00ff00;
+    -webkit-transform: translate(40px, -40px) scale(0.5);
+    transform: translate(40px, -40px) scale(0.5);
+  }
+  60% {
+    background-color: #0000ff;
+    -webkit-transform: translate(-80px, -80px) scale(1.7);
+    transform: translate(-80px, -80px) scale(1.7);
+  }
+  80% {
+    background-color: #ffff00;
+    -webkit-transform: translate(160px, -160px) scale(0.7);
+    transform: translate(160px, -160px) scale(0.7);
+  }
+}

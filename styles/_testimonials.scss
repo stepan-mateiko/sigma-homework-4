@@ -1,0 +1,67 @@
+.testimonials {
+  @include centerised(80%);
+  margin-top: 100px;
+  &__header {
+    text-align: center;
+  }
+  &__swiper {
+    position: relative;
+    padding: 50px !important;
+  }
+  &__img {
+    width: 25%;
+    img {
+      width: 60%;
+      border-radius: 20px 0 20px 0;
+    }
+  }
+  &__name {
+    font-weight: 700;
+  }
+  &__icon {
+    width: 40px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  &__pagination {
+    position: absolute;
+    width: 100px;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    @include flex-position(space-between);
+    button {
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 50px;
+      -webkit-box-shadow: 4px 3px 7px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 4px 3px 7px 0px rgba(0, 0, 0, 0.3);
+      border: none;
+      background-color: #fff;
+      &:hover {
+        background-color: $primal-green;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.swiper-slide {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  width: 50% !important;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 20px 0 20px 0;
+  position: relative !important;
+  -webkit-box-shadow: 11px 9px 18px 0px rgba(0, 0, 0, 0.46);
+  box-shadow: 11px 9px 18px 0px rgba(0, 0, 0, 0.46);
+  padding: 10px;
+}
+.swiper-slide-prev {
+  opacity: 0;
+}

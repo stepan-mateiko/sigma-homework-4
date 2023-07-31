@@ -1,0 +1,69 @@
+.blog {
+  @include centerised(100%);
+  margin-top: 100px;
+  padding: 50px 100px;
+  background-color: $background-grey;
+  &__header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__wrapper {
+    @include flex-position();
+    @include centerised(80%);
+  }
+  &__card {
+    width: 45%;
+    opacity: 0;
+    &-img {
+      border: 1px solid $border-color;
+      border-radius: 20% 0 20% 0;
+      img {
+        position: relative;
+        bottom: 15px;
+        right: 15px;
+        border-radius: inherit;
+        width: 100%;
+        -webkit-transition-duration: 2s;
+        transition-duration: 2s;
+        &:hover {
+          -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+          cursor: pointer;
+        }
+      }
+    }
+    &-heading {
+      color: $headings-color;
+      margin: 20px 0 10px 0;
+      font-size: 30px;
+      -webkit-transition-duration: 2s;
+      transition-duration: 2s;
+      &:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+    &-text {
+      color: $text-color;
+      font-size: 18px;
+      -webkit-transition-duration: 2s;
+      transition-duration: 2s;
+      &:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+    &-btn {
+      @include green-btn(18px, 600);
+      -webkit-transition-duration: 2s;
+      transition-duration: 2s;
+      &:hover {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+  }
+}

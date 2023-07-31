@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <title>Homework 4</title>
+  </head>
+  <body>
+    <div class="preloader-container" id="preloader-container">
+      <!-- Preloader -->
+    </div>
+    <div class="main-content" id="main-content">
+      <!-- Header -->
+      <header class="header">
+        <img
+          src="/assets/images/icons/header-logo.svg"
+          alt="header logo"
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#start">Start</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#services">Services</a>
+            </li>
+            <li class="header__menu-item"><a href="#about">About</a></li>
+            <li class="header__menu-item">
+              <a href="#statistics">Statistics</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#testimonials">Testimonials</a>
+            </li>
+            <li class="header__menu-item"><a href="#blog">Blog</a></li>
+            <li class="header__menu-item">
+              <a href="#subscribe">Subscribe</a>
+            </li>
+            <li class="header__menu-item"><a href="#footer">Contact</a></li>
+          </ul>
+          <button class="header__btn">Sign up</button>
+        </nav>
+        <div class="header__progress"></div>
+      </header>
+      <!-- Start your project -->
+      <div class="start" id="start">
+        <div class="start__info">
+          <p class="start__title">MODERN INTERIOR</p>
+          <h1 class="start__heading">Create Your Interior Design.</h1>
+          <p class="start__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+          <button class="start__btn">Contact</button>
+        </div>
+        <div class="start__img">
+          <img src="/assets/images/start-img.png" alt="start image" />
+        </div>
+      </div>
+      <!-- Our Services -->
+      <div class="services" id="services">
+        <p class="services__title">WHAT WE DO</p>
+        <h2 class="services__heading">Our Service</h2>
+        <div class="services__dashboard">
+          <div class="services__filtres">
+            <button class="services__btn" id="filter-all">All</button>
+            <button class="services__btn" id="filter-comedy">Comedies</button>
+            <button class="services__btn" id="filter-drama">Drama</button>
+            <button class="services__btn" id="filter-horror">Horror</button>
+          </div>
+          <div class="services__items" id="items-list"></div>
+        </div>
+      </div>
+      <!-- About Us -->
+      <div class="about" id="about">
+        <div class="about__card learn-more">
+          <div class="learn-more__img">
+            <img src="/assets/images/learn-more-img.png" alt="learn more" />
+          </div>
+          <div class="learn-more__info">
+            <p class="learn-more__title">ABOUT US</p>
+            <h2 class="learn-more__heading">
+              Interioris The Will of An Epoch Mextreo
+            </h2>
+            <p class="learn-more__text">
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration in some form injected
+              humour, or randomised words which don't look even slightly
+              believable.If you are going to use a passage of Lorem Ipsum, sure
+              there isn't anything embarrassing hidden the middleof text. All
+              the Lorem Ipsum generators on the Internettend to repeat
+              predefined chunks as necessary,making this the first true
+              generator on the Internet.
+            </p>
+            <button class="learn-more__btn">Learn more</button>
+          </div>
+        </div>
+        <div class="about__card read-more">
+          <div class="read-more__info">
+            <div class="read-more__number">20</div>
+            <h2 class="read-more__heading">
+              Years Of Successful Working The Market
+            </h2>
+            <button class="read-more__btn">Read more</button>
+          </div>
+          <div class="read-more__img">
+            <img src="/assets/images/read-more-img.png" alt="read more" />
+          </div>
+        </div>
+      </div>
+      <!-- Statistics -->
+      <div class="statistics" id="statistics">
+        <h2 class="statistics__heading">
+          3000+ Completed Work Which WE have Successfully Done
+        </h2>
+        <div class="statistics__wrapper">
+          <div class="statistics__card">
+            <div class="statistics__box">
+              <p class="statistics__number">980</p>
+              <p class="statistics__text">Project</p>
+            </div>
+          </div>
+          <div class="statistics__card">
+            <div class="statistics__box">
+              <p class="statistics__number">520</p>
+              <p class="statistics__text">Happy Client</p>
+            </div>
+          </div>
+          <div class="statistics__card">
+            <div class="statistics__box">
+              <p class="statistics__number">330</p>
+              <p class="statistics__text">Winners</p>
+            </div>
+          </div>
+          <div class="statistics__card">
+            <div class="statistics__box">
+              <p class="statistics__number">120</p>
+              <p class="statistics__text">Recomend</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonials -->
+      <div class="testimonials" id="testimonials">
+        <div class="testimonials__header">
+          <p class="testimonials__title">TESTIMONIALS</p>
+          <h2 class="testimonials__heading">Client says about us</h2>
+        </div>
+        <div class="testimonials__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonials__img">
+                <img
+                  src="./assets/images/testimonials-1.png"
+                  alt="testimonials image 1"
+                />
+              </div>
+
+              <div class="testimonials__info">
+                <p class="testimonials__name">Louis Saville</p>
+                <span class="testimonials__position">CEO at Google inc</span>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <img
+                src="/assets/images/icons/quotes.svg"
+                alt="testimonials icon"
+                class="testimonials__icon"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonials__img">
+                <img
+                  src="./assets/images/testimonials-2.png"
+                  alt="testimonials image 2"
+                />
+              </div>
+              <div class="testimonials__info">
+                <p class="testimonials__name">Rekha Varadwaz</p>
+                <span class="testimonials__position">CEO at Google inc</span>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <img
+                src="/assets/images/icons/quotes.svg"
+                alt="testimonials icon"
+                class="testimonials__icon"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonials__img">
+                <img
+                  src="./assets/images/testimonials-3.jpg"
+                  alt="testimonials image 3"
+                />
+              </div>
+              <div class="testimonials__info">
+                <p class="testimonials__name">Jon Snow</p>
+                <span class="testimonials__position">CEO at Google inc</span>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <img
+                src="/assets/images/icons/quotes.svg"
+                alt="testimonials icon"
+                class="testimonials__icon"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonials__img">
+                <img
+                  src="./assets/images/testimonials-4.png"
+                  alt="testimonials image 4"
+                />
+              </div>
+              <div class="testimonials__info">
+                <p class="testimonials__name">Severus Snape</p>
+                <span class="testimonials__position">CEO at Google inc</span>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <img
+                src="/assets/images/icons/quotes.svg"
+                alt="testimonials icon"
+                class="testimonials__icon"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonials__img">
+                <img
+                  src="./assets/images/testimonials-5.png"
+                  alt="testimonials image 5"
+                />
+              </div>
+              <div class="testimonials__info">
+                <p class="testimonials__name">Tony Stark</p>
+                <span class="testimonials__position">CEO at Google inc</span>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <img
+                src="/assets/images/icons/quotes.svg"
+                alt="testimonials icon"
+                class="testimonials__icon"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonials__img">
+                <img
+                  src="./assets/images/testimonials-6.png"
+                  alt="testimonials image 6"
+                />
+              </div>
+              <div class="testimonials__info">
+                <p class="testimonials__name">Darth Vader</p>
+                <span class="testimonials__position">CEO at Google inc</span>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <img
+                src="/assets/images/icons/quotes.svg"
+                alt="testimonials icon"
+                class="testimonials__icon"
+              />
+            </div>
+          </div>
+          <div class="testimonials__pagination">
+            <button id="prev-btn">&lt</button>
+            <button id="next-btn">&gt</button>
+          </div>
+        </div>
+      </div>
+      <!-- Blog -->
+      <div class="blog" id="blog">
+        <div class="blog__header">
+          <p class="blog__title">LATEST NEWS</p>
+          <h2 class="blog__heading">From Our Blog</h2>
+        </div>
+        <div class="blog__wrapper">
+          <div class="blog__card">
+            <div class="blog__card-img">
+              <img src="/assets/images/blog-card-1.png" alt="blog card 1" />
+            </div>
+            <h3 class="blog__card-heading">2020 Interior Design Trends</h3>
+            <p class="blog__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="blog__card-btn">CONTINUE READING....</button>
+          </div>
+          <div class="blog__card">
+            <div class="blog__card-img">
+              <img src="/assets/images/blog-card-2.png" alt="blog card 2" />
+            </div>
+            <h3 class="blog__card-heading">
+              28 Notable Product at ARC Interior Design
+            </h3>
+            <p class="blog__card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="blog__card-btn">CONTINUE READING....</button>
+          </div>
+        </div>
+      </div>
+      <!-- Subscribe -->
+      <div class="subscribe" id="subscribe">
+        <div class="subscribe__info">
+          <h2 class="subscribe__heading">DON’T FORGET TO SIGN UP</h2>
+          <hr />
+          <p class="subscribe__text">
+            Find out early about all upcoming promotions and new product
+            releases with our newsletter.
+          </p>
+        </div>
+
+        <form class="subscribe__form">
+          <input
+            type="text"
+            id="user-name"
+            pattern="^[A-Z][a-zA-Z]*$"
+            title="Please enter only Latin letters, starting with a capital letter."
+            placeholder="Enter your name....."
+            required
+          />
+          <input
+            type="text"
+            id="user-surname"
+            pattern="^[A-Z][a-zA-Z]*$"
+            title="Please enter only Latin letters, starting with a capital letter."
+            placeholder="Enter your surname....."
+            required
+          />
+          <input
+            type="email"
+            id="user-email"
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+            title="Please enter a valid email address in the format user@example.com."
+            placeholder="Enter your e-mail....."
+            required
+          />
+          <button type="submit">Subscribe</button>
+        </form>
+        <div class="subscribe__greet">
+          <h1>Greetings, Sigma!!</h1>
+          <p>
+            Only today, <span id="subscribe-date"></span>, you have a discount
+            120%
+          </p>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer" id="footer">
+        <div class="footer__wrapper">
+          <div class="footer__main">
+            <img src="/assets/images/icons/header-logo.svg" alt="logo" />
+            <p>
+              But i must explain to you all this mistaken idea of dencouncing
+              pleasure.
+            </p>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__links-title">Quick Links</h4>
+            <ul>
+              <li class="footer__links-item">
+                <a href="#">About Our Company</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#">Services We Provide</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#">Career & Opportunity</a>
+              </li>
+              <li class="footer__links-item">
+                <a href="#">Privacy & Policy</a>
+              </li>
+              <li class="footer__links-item"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer__company">
+            <h4 class="footer__company-title">Company</h4>
+            <ul>
+              <li class="footer__company-item">
+                <a href="#">About Company</a>
+              </li>
+              <li class="footer__company-item">
+                <a href="#">Our Testimonials</a>
+              </li>
+              <li class="footer__company-item"><a href="#">Latest News</a></li>
+              <li class="footer__company-item"><a href="#">Our Mission</a></li>
+              <li class="footer__company-item">
+                <a href="#">Get a Free Quote</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <h4 class="footer__contacts-title">Contact Us</h4>
+            <ul>
+              <li class="footer__contacts-item">
+                Sagrada Familia, Hearba Street, Front, USA
+              </li>
+              <li class="footer__contacts-item">brandoxide@gmail.com</li>
+              <li class="footer__contacts-item">002-568423591</li>
+            </ul>
+          </div>
+          <div class="footer__socials">
+            <h4 class="footer__socials-title">Follow Us</h4>
+            <ul>
+              <li class="footer__socials-item">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/images/icons/facebook.svg#facebook"
+                  ></use>
+                </svg>
+              </li>
+              <li class="footer__socials-item">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/images/icons/twitter.svg#twitter"
+                  ></use>
+                </svg>
+              </li>
+              <li class="footer__socials-item">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/images/icons/instagram.svg#instagram"
+                  ></use>
+                </svg>
+              </li>
+              <li class="footer__socials-item">
+                <svg class="icon">
+                  <use
+                    xlink:href="../assets/images/icons/linkedin.svg#linkedin"
+                  ></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="footer__copyright">
+          Copyright @ <span id="copyright-date">2020</span> Brandoxide.all right
+          reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="/js/testimonials.js"></script>
+    <script src="/js/services.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="/js/subscribe.js"></script>
+    <script src="/js/blog.js"></script>
+    <script src="/js/confirmation.js"></script>
+    <script src="/js/progress.js"></script>
+    <script src="/js/preloader.js"></script>
+  </body>
+</html>

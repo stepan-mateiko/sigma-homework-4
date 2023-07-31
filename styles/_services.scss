@@ -1,0 +1,84 @@
+.services {
+  @include centerised(90%);
+  margin-top: 100px;
+  &__filtres {
+    @include flex-position();
+  }
+  &__items {
+    @include flex-position();
+    margin-top: 50px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+  &__btn {
+    color: #fff;
+    background-color: $primal-green;
+    border: $primal-green 5px solid;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 10%;
+  }
+  &__active-btn {
+    color: $primal-green;
+    background-color: #fff;
+  }
+  &__card {
+    display: -ms-grid;
+    display: grid;
+    grid-template-areas:
+      "image title title title"
+      "image description description description"
+      "image date void rate";
+    width: 25%;
+    height: 50%;
+    padding: 15px;
+    gap: 5px;
+    -webkit-box-shadow: 17px 13px 24px 0px rgba(0, 0, 0, 0.34);
+    box-shadow: 17px 13px 24px 0px rgba(0, 0, 0, 0.34);
+    border-radius: 15px 0 15px 0;
+    cursor: pointer;
+    &-img {
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 5;
+      -ms-grid-column: 1;
+      grid-area: image;
+      width: 100%;
+    }
+    &-title {
+      -ms-grid-row: 1;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 5;
+      grid-area: title;
+    }
+    &-description {
+      -ms-grid-row: 3;
+      -ms-grid-column: 3;
+      -ms-grid-column-span: 5;
+      grid-area: description;
+    }
+    &-date {
+      -ms-grid-row: 5;
+      -ms-grid-column: 3;
+      grid-area: date;
+      font-weight: 700;
+    }
+    &-rate {
+      -ms-grid-row: 5;
+      -ms-grid-column: 7;
+      grid-area: rate;
+      &::before {
+        content: "\2605";
+        color: gold;
+      }
+    }
+    &:hover {
+      color: #fff;
+      background-color: $bronze-card;
+    }
+  }
+}
+.error-message {
+  color: red;
+}

@@ -1,0 +1,53 @@
+.subscribe {
+  @include centerised(40%);
+  margin: 100px auto;
+  text-align: center;
+  &__info {
+    margin-bottom: 50px;
+    hr {
+      width: 50%;
+      margin: 30px auto;
+      border: 0.5px solid $subscribe-line;
+    }
+  }
+  &__text {
+    text-align: center;
+    @include centerised(70%);
+  }
+  &__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    input {
+      border-radius: 15px 0 15px 0;
+      background-color: $background-grey;
+      border: none;
+      padding: 10px;
+      color: $text-color;
+    }
+    input[type="text"] {
+      width: 40%;
+    }
+    input[type="email"] {
+      width: 85%;
+    }
+    button {
+      @include green-btn(18px, 600);
+    }
+  }
+  &__greet {
+    display: none;
+    -webkit-animation-name: subscribe;
+    animation-name: subscribe;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+}

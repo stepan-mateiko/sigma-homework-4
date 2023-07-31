@@ -1,0 +1,26 @@
+@mixin flex-position($type: space-around) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: $type;
+  -ms-flex-pack: $type;
+  justify-content: $type;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+@mixin centerised($width: 100%) {
+  width: $width;
+  margin: 0 auto;
+}
+@mixin green-btn($size: 18px, $weight: 700) {
+  cursor: pointer;
+  background-color: $primal-green;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 15px 0 15px 0;
+  margin: 20px 0;
+  font-size: $size;
+  font-weight: $weight;
+}

@@ -1,0 +1,37 @@
+.start {
+  @include centerised(90%);
+  @include flex-position();
+  padding: 20px;
+  margin-top: 100px;
+  &__info {
+    width: 45%;
+  }
+  &__title {
+    color: $text-color;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  &__heading {
+    margin: 20px 0;
+  }
+  &__text {
+    color: $text-color;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  &__btn {
+    @include green-btn();
+  }
+  &__img {
+    width: 40%;
+    border: 1px solid $border-color;
+    border-radius: 15% 0 15% 0;
+    img {
+      width: 100%;
+      position: relative;
+      bottom: 15px;
+      right: 15px;
+      border-radius: inherit;
+    }
+  }
+}

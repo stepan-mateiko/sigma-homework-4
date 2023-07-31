@@ -1,0 +1,54 @@
+.header {
+  @include centerised(100%);
+  padding: 20px;
+  position: sticky;
+  background-color: #fff;
+  z-index: 2;
+  top: 0;
+  @include flex-position();
+  font-weight: 600;
+  font-size: 16px;
+  &__nav {
+    @include flex-position(space-between);
+    width: 70%;
+  }
+  &__menu {
+    width: 90%;
+    @include flex-position();
+    padding: 0;
+    &-item {
+      list-style-type: none;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: $headings-color;
+        padding: 5px;
+        &:hover {
+          color: $primal-green;
+          border: 3px solid $primal-green;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  &__btn {
+    color: #fff;
+    background-color: $bronze-card;
+    border-radius: 20px 0 20px 0;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+  &__progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: $primal-green;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+    max-width: 100%;
+  }
+}
